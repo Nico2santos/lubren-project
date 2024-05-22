@@ -2,21 +2,56 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .container {
+    height: 100%;
+}
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #68c3a3; /* Fondo verde claro */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco */
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #6da9d5; /* Texto azul claro al pasar el mouse */
+}
+
+/* Estilos para la transición suave */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilos adicionales para cuando el enlace está en hover */
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+    background-color: #467ab1; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+}
+
+.container {
     margin-top: 20px;
-  }
-  
-  .mt-5 {
+    height: 100%; /* Ajusta el tamaño del contenedor para que ocupe el espacio restante menos la altura de la barra de navegación */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mt-5 {
     margin-top: 3rem !important;
-  }
-  
-  .pt-5 {
+}
+
+.pt-5 {
     padding-top: 3rem !important;
-  }
-  
-  .img-fluid {
+}
+
+.img-fluid {
     max-width: 100%;
     height: auto;
-  }  
+}
